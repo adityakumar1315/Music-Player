@@ -14,7 +14,7 @@ const nextBtn = document.getElementById('next');
 const songs = [
   {
     name: 'sajni',
-    displayName: 'Sajni-re',
+    displayName: 'sajni-re',
     artist: 'Arjit singh',
   },
   {

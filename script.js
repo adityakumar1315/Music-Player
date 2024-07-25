@@ -1,5 +1,5 @@
 
-const image = document.getElementsByTagName('img');
+const image = document.querySelector('img');
 const title = document.getElementById('title');
 const artist = document.getElementById('artist');
 const music = document.querySelector('audio');
@@ -10,11 +10,6 @@ const progressContainer = document.getElementById('progress-container');
 const prevBtn = document.getElementById('prev');
 const playBtn = document.getElementById('play');
 const nextBtn = document.getElementById('next');
-
-
-console.log(image);
-const img = image[0];
-console.log(img)
 // Music
 const songs = [
   {
@@ -96,7 +91,7 @@ function loadSong(song) {
   title.textContent = song.displayName;
   artist.textContent = song.artist;
   music.src = `${song.displayName}.mp3`;
-  img.src=`${song.name}.jpg`;
+  image.src=`${song.name}.jpg`;
   
 
 }
